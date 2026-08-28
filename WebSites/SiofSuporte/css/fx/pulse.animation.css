@@ -1,0 +1,144 @@
+/*------------------------------------------------------------------------------------
+	STYLESHEET ANIMATION - PULSE
+
+	autor: Thiago Teles Pereira - Web Designer
+	contato: thiago.teles@portalimap.org.br
+	empresa: IMAP - Instituto Municipal de Administração Pública
+	criado em: 03/01/2013
+	versão: 1.0
+
+	Animação CSS3 com efeito de pulsação.
+
+	SOBRE VALIDAÇÃO: ESTA FOLHA DE ESTILO UTILIZA PREFIXOS
+	PORPRIETÁRIOS (-MOZ, -WEBKIT, -O), ESTES PREFIXOS SÃO NECESSÁRIOS
+	PARA QUE DETERMINADA PROPRIEDADE CSS FUNCIONE NO NAVEGADOR
+	EM QUESTÃO. COMO O CSS3 AINDA NÃO É UM PADRÃO OFICIAL SE FAZ
+	NECESSÁRIO O USO DESTES PREFIXOS. POR ESTE MOTIVO APENAS, ESTA
+	FOLHA DE ESTILO NÃO PASSA NO VALIDADOR W3C.
+
+	NÃO REALIZE ALTERAÇÕES NO CSS SEM ANTES
+	ENTRAR EM CONTATO COM O WEB DESIGNER.
+-----------------------------------------------------------------------------------*/
+
+.pulse_animation:hover{
+	color: #b8bd3e;
+	animation        :pulse 1s ease 1 normal;/*W3C*/
+	-moz-animation   :pulse 1s ease 1 normal;/*Firefox 5+*/
+	-webkit-animation:pulse 1s ease 1 normal;/*Chrome e Safari*/
+}
+
+@keyframes pulse{
+	0%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	25%{
+		-webkit-transform: scale(1.1);
+		   -moz-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		     -o-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	50%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	75%{
+		-webkit-transform: scale(1.2);
+		   -moz-transform: scale(1.2);
+		    -ms-transform: scale(1.2);
+		     -o-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+/*firefox 4+*/
+@-moz-keyframes pulse{
+	0%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	25%{
+		-webkit-transform: scale(1.1);
+		   -moz-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		     -o-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	50%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	75%{
+		-webkit-transform: scale(1.2);
+		   -moz-transform: scale(1.2);
+		    -ms-transform: scale(1.2);
+		     -o-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+/*chrome e safari*/
+@-webkit-keyframes pulse{
+	0%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	25%{
+		-webkit-transform: scale(1.1);
+		   -moz-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		     -o-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	50%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	75%{
+		-webkit-transform: scale(1.2);
+		   -moz-transform: scale(1.2);
+		    -ms-transform: scale(1.2);
+		     -o-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+}

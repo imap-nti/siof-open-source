@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageLogin.master.cs"
+    Inherits="Admin_MasterPageLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="keywords" content="keyword,keyword" />
+    <meta name="description" content="conteúdo descritivo da página atual" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="all" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>SiofSuporte</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/themes/2012.2/layout.css" />
+    <!--jQuery versão 1.8.3 minificado-->
+    <script type="text/javascript" src="../js/jquery_1.8.3.min.js"></script>
+    <!--jQuery UI 1.9.2 minificado-->
+    <script type="text/javascript" src="../js/jquery-ui-1.9.2.custom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/themes/2012.2/jquery_ui/jquery-ui-1.10.0.custom.min.css" />
+    <!-- Cad Mask -->
+    <script type="text/javascript" src="../plugins/cadMask/jquery.cadmask.min.js"></script>
+    <script type="text/javascript" src="../plugins/cadMask/mask.min.js"></script>
+    <!-- Hand Note -->
+    <script type="text/javascript" src="../plugins/handNote/handNote.js"></script>
+    <link rel="stylesheet" type="text/css" href="../plugins/handNote/handNote.css" media="screen" />
+    <!-- Funções Gerais -->
+    <script type="text/javascript" src="../js/jquery.functions.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="stylized">
+        <!-- SECTION HEADER -->
+        <div id="header">
+            <div id="inner_header">
+                <h1 id="brand">SiofSuporte</h1>
+            </div>
+        </div>
+        <!-- END SECTION HEADER -->
+        <!-- SECTION CONTENT -->
+        <div id="content">
+            <!-- #cutShadow_document - marcação extra para aplicação do efeito de drop shadow do papel -->
+            <div id="cutShadow_document">
+                <!-- SECTION INNER CONTENT -->
+                <div id="inner_content" class="grid_16col clearfix">
+                    <!-- SECTION SIDEBAR -->
+                    <div id="sidebar" class="grid_6 floatRight">
+                        <!-- SECTION LOGIN -->
+                        <div class="box_cutShadow">
+                            <div id="form_login" class="stylized">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <!-- carregar preloader durante validação do step one -->
+                            <!-- <div class="overlay_loading"><img src="images/loader_image/loader_alpha.gif" alt="carregando dados"></div> -->
+                        </div>
+                        <!--END SECTION LOGIN -->
+                    </div>
+                    <!-- END SECTION SIDEBAR -->
+                    <!-- SECTION MAIN CONTENT -->
+                    <div id="main_content" class="grid_10 floatLeft">
+                        <%-- <h2>
+                        Seja bem-vindo ao Sistema de Vigilância Sanitária</h2>--%>
+                        <h2>Seja bem-vindo ao SiofSuporte Web</h2>
+                        <!-- section hand note -->
+                        <div id="handNote_wrapper">
+                            <p class="handNote" id="msg_1" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </p>
+                            <p class="handNote" id="msg_2" style="display: block;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p class="handNote" id="msg_3" style="display: none;">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <p class="handNote" id="msg_4" style="display: none;">
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="handNote" id="msg_5" style="display: none;">
+                                Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                            </p>
+                        </div>
+                        <!-- end section hand -->
+                    </div>
+                    <!-- END SECTION MAIN CONTENT -->
+                </div>
+                <!-- END SECTION INNER CONTENT -->
+            </div>
+            <!-- END #cutShadow_document -->
+        </div>
+        <!-- END SECTION CONTENT -->
+        <!-- SECTION FOOTER -->
+        <div id="footer">
+            <div id="inner_footer">
+                <p id="copyright">
+                    <span>&copy;</span>Copyright
+                <%=DateTime.Now.Year %>
+                IMAP - Instituto Municipal de Administração Pública
+                </p>
+                <p id="selo_w3c_xhtml">
+                    <a href="https://validator.w3.org/check?uri=referer">
+                        <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31"
+                            width="88" />
+                    </a>
+                </p>
+                <a href="https://www.portalimap.org.br" rel="external">
+                    <img src="../img/selos/selo_imap_negativo.png" alt="Desenvolvido pelo IMAP - Instituto Municipal de Administração Pública"
+                        id="selo_imap" /></a>
+            </div>
+        </div>
+        <!-- END SECTION FOOTER -->
+    </form>
+</body>
+</html>

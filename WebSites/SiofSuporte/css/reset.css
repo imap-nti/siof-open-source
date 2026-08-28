@@ -1,0 +1,395 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------------------
+	STYLESHEET PARA RESET CSS
+
+	autor: Thiago Teles Pereira - Web designer
+	empresa: IMAP - Instituto Municipal de Administração Pública
+	criado em: 11/06/2012
+	versão: 1.0
+	original: Baseado no CSS Reset de Eric Meyer
+	info original:  http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+-------------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: AkzidenzGroteskLight,Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.125em;/*18px*/
+}
+/*----------------------------------------------
+FIX BUGS
+------------------------------------------------*/
+br{
+	clear: both;
+}
+.clearfix:after{
+	content:".";
+	height: 0;
+	line-height:0;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+*{outline:none;}
+/*----------------------------------------------
+CABEÇALHOS E PARAGRÁFO
+------------------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+	margin: 25px 0 10px 0;
+	font-family: AkzidenzGroteskBQBold, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+}
+/*p+h2, p+h3, p+h4, p+h5, p+h6{
+	margin-top: 20px;
+}*/
+/*h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{
+	margin-top: -10px;
+}*/
+p{
+	margin-bottom:10px;
+	word-wrap: break-word;
+}
+h2+h3, h3+h4, h4+h5, h5+h6{
+	margin-top: -7px !important;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;
+}
+h1+*,h2+*,h3+*,h4+*,h5+*,h6+*{
+	margin-top: 0 !important;
+}
+.subheading{
+	margin: 15px 0 10px 0 !important;
+	font-family: AkzidenzGroteskLight, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+/*--------------------------------------
+ELEMENTOS DE FRASE
+-----------------------------------------*/
+strong{
+	font-weight:700;
+	/*font-family: 'AkzidenzGroteskBQBold';*/
+}
+em, dfn, var{
+	font-style:italic;
+}
+kbd, samp, code, pre{
+	font-family:"Courier New", Courier, monospace;
+}
+address{
+	margin-bottom:10px;
+}
+/*--------------------------
+CITAÇÕES
+----------------------------*/
+blockquote{
+	padding: 10px;
+	border-width: 0 4px;
+	border-style: solid;
+	border-color: #FFD973;
+	border-radius: 10px;
+	/*margin-left:16px;*/
+	/*background-color: #FCF0CE;*/
+}
+blockquote, q, cite{
+	font-style:italic;
+	font-weight:700;
+}
+blockquote p:first-child:before, q:before{
+	content:open-quote;
+}
+blockquote p:first-child:after, q:after{
+	content:close-quote;
+}
+
+/*------------------
+RÉGUA
+---------------------*/
+hr{
+	border-color:#CCC;
+	border-style:dotted;
+	border-width:1px 0 0 0;
+	margin:20px 0;
+}
+/*------------------------------------
+ABREVIAÇÕES E SIGLAS
+-------------------------------------*/
+abbr, acronym{
+	cursor:help;
+	border-bottom:1px dotted #666;
+}
+a abbr, a acronym{
+	border:none;
+}
+
+/*-----------------
+LINKS
+--------------------*/
+a{
+	color:inherit;
+	font-weight: 700;
+	text-decoration:underline;
+}
+a:hover{
+	color: #2478BC;
+}
+a:active{
+	color:inherit;
+	text-decoration:none;
+}
+a:visited{
+	color: inherit;
+}
+a.external{
+	padding-right:14px;
+	background:url('../img/external_links/external-link-beige-dark.png') no-repeat right top;
+}
+/*------------------
+LISTAS
+---------------------*/
+ol, ul, dl{
+	padding-bottom:1em;
+	margin-left:1em;
+	list-style-position:inside;
+}
+li, dd{
+	padding:0.125em 0;
+}
+dt{
+	margin-top:0.45em;
+	font-weight:700;
+}
+dd{
+	padding-left:1em;
+}
+
+/*---------------------------------------
+	CLASSES EXTRAS
+---------------------------------------*/
+/*TEXT COLOR*/
+.color_base{
+	color: #405380;
+}
+.color_complementary{
+	color: #BF9C54;
+}
+/*FLOATS*/
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+.flutuaEsq, .flutuaEsqMore, .flutuaEsqLess{
+	position: relative;
+	margin-right: 40px;
+	float:left;
+}
+.flutuaEsqMore{
+	margin-right: 60px;
+}
+.flutuaEsqLess{
+	margin-right: 10px;
+}
+.flutuaDir, .flutuaDirMore, .flutuaDirLess{
+	position: relative;
+	float:right;
+}
+.flutuaDirMore{
+	margin-left: 60px;
+}
+.flutuaDirLess{
+	margin-left: 10px;
+}
+/*DEPRECATED*/
+.flutua_last-child{
+	position: relative;
+	margin: 0 !important;
+	float:left;
+}
+.clear{
+	clear:both;
+}
+/*FOMATAÇÃO VISUAL*/
+.inline{
+	display:inline !important;
+}
+.inlineBlock{
+	display:inline-block !important;
+}
+/*LISTA*/
+.list_none{
+	list-style-type: none !important;
+}
+.list_square{
+	list-style-type: square !important;
+}
+.list_circle{
+	list-style-type: circle !important;
+}
+.list_disc{
+	list-style-type: disc  !important;
+}
+.list_decimal{
+	list-style-type: decimal !important;
+}
+.list_decimal_leadingZero{
+	list-style-type: decimal-leading-zero !important;
+}
+.list_lowerAlpha{
+	list-style-type: lower-alpha !important;
+}
+.list_upperAlpha{
+	list-style-type: upper-alpha !important;
+}
+.list_lowerRoman{
+	list-style-type: lower-roman !important;
+}
+.list_upperRoman{
+	list-style-type: upper-roman !important;
+}
+
+/*HIGHLIGHTS*/
+.heading_highlight{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	padding: 4px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	margin: 50px 0 15px 0;
+	text-indent: 10px;
+	line-height: 30px;
+	white-space: nowrap;
+	overflow: visible;
+}
+.heading_highlight, .heading_highlight:before, .heading_highlight:after{
+	background-color: #D4DEF5;
+}
+.heading_highlight:before, .heading_highlight:after{
+	content:'';
+	position: absolute;
+	display: block;
+	z-index: 100;
+}
+.heading_highlight:before{
+	top: -18px;
+	left: 18px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+}
+.heading_highlight:after{
+	top: -2px;
+	left: 34px;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.highlight{
+	background-color: #FFDC00 !important;
+}
+/*VISIBILITY*/
+.acessibility{
+	position: absolute;
+	text-indent:-10000em;
+}
+.hiddenElement{
+	display:none;
+}
+.no_bg{
+	background-image: none !important;
+}
+/*TEXT*/
+.bold{
+	font-weight: 700 !important;
+}
+.italic{
+	font-style: italic !important;
+}
+.font_small{
+	font-size:12px !important;
+}
+.font_normal{
+	font-size: 16px !important;
+}
+.font_big{
+	font-size:24px !important;
+}
+.indent{
+	text-indent: 16px;
+}
+/*BOX MODEL*/
+.marginBottom_10 {
+    margin-bottom: 10px;
+}
+.border_radius{
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+/*POSITION*/
+.center{
+	position: relative;
+	margin: 0 auto;
+}
+.centerH_abs, .centerV_abs{
+	position: absolute;
+}
+.centerH_abs{
+	left: 50%;
+}
+.centerV_abs{
+	top: 50%;
+}
+.center_both_axis{
+	left: 50%;
+	top: 50%;
+}
+
+/*---------------------------------------
+	SELEÇÃO
+---------------------------------------*/
+::selection{
+	color:#333 !important;
+	background-color:#FFDC00;
+}
+::-moz-selection{
+	color:#333 !important;
+	background-color:#FFDC00;
+}

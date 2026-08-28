@@ -1,0 +1,6 @@
+[DEFAULT]
+user=ocid1.user.oc1..aaaaaaaae5ugypgq253xi4uz3j6estih5yh44jdyeql6ve3lk5e2sjlwwtca
+fingerprint=c4:5f:f5:f0:22:9b:ea:e3:cf:b5:d0:57:bb:fa:fa:47
+tenancy=ocid1.tenancy.oc1..aaaaaaaacxuoaqwgweuqqhzmc32gr6fq65qutegjsulr4xasdotbfx2tlgsa
+region=sa-saopaulo-1
+key_file=./keys/sistemas@portalimap.org.br_2024-06-12T12_13_06.782Z.pem

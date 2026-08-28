@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Admin/MasterPage.master.cs"
+    Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="keywords" content="keyword,keyword" />
+    <meta name="description" content="conteúdo descritivo da página atual" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="all" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>SiofSuporte</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/themes/2012.2/layout.css" />
+    <!--jQuery versão 1.8.3 minificado-->
+    <script type="text/javascript" src="../js/jquery_1.8.3.min.js"></script>
+    <!--jQuery UI 1.9.2 minificado-->
+    <script type="text/javascript" src="../js/jquery-ui-1.9.2.custom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/themes/2012.2/jquery_ui/jquery-ui-1.10.0.custom.min.css" />
+    <!--Table Sorter-->
+    <script type="text/javascript" src="../plugins/tableSorter/jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../plugins/tableSorter/custom_theme/tablesorter.css" />
+    <!-- Konsertina -->
+    <script type="text/javascript" src="../plugins/konsertina/konsertina.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../plugins/konsertina/themes/konsertina.css" />
+    <!-- Pin Unpin e Modal -->
+    <script type="text/javascript" src="../plugins/pinUnpin/pinUnpin.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../plugins/pinUnpin/themes/pinUnpin.min.css" />
+    <!-- Chosen -->
+    <script type="text/javascript" src="../plugins/chosen/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../plugins/chosen/themes/chosen.css" />
+    <!-- Hand Note -->
+    <script type="text/javascript" src="../plugins/handNote/handNote.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../plugins/handNote/handNote.min.css" />
+    <!-- Modal -->
+    <link rel="stylesheet" type="text/css" href="../css/themes/2012.2/modal.css" />
+    <!-- Cad Mask -->
+    <script type="text/javascript" src="../plugins/cadMask/jquery.cadmask.min.js"></script>
+    <script type="text/javascript" src="../plugins/cadMask/mask.min.js"></script>
+    <!--Carrega funções-->
+    <script type="text/javascript" src="../js/jquery.functions.js"></script>
+    <!--Carrega funções grid-->
+    <script type="text/javascript" src="../js/Grid.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="stylized" enctype="multipart/form-data" method="post">
+        <!-- SECTION HEADER -->
+        <div id="header">
+            <div id="inner_header">
+                <h1 id="brand">SiofSuporte - Sistema de Imprensa Oficial</h1>
+                <!-- section user controls -->
+                <ul id="user_controls" class="grad_rd_box">
+                    <li><span id="id_prefeitura">IMAP - SiofSuporte</span>
+                        <div id="user_logged">
+                            <span class="icon_userLogged"></span><span id="user_name">
+                                <asp:Label ID="des_nome_usuLabel" runat="server" Text=""></asp:Label></span>
+                            <span id="user_profile">
+                                <asp:Label ID="des_perfil_perLabel" runat="server" Text=""></asp:Label></span>
+                        </div>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="exit_system" runat="server" CssClass="icon" rel="nofollow" OnClick="exit_system_Click"><span class="iconText"><span class="iconText_cornerRB"></span>Sair do sistema</span></asp:LinkButton>
+                    </li>
+                </ul>
+                <!-- end section user controls -->
+            </div>
+        </div>
+        <!-- END SECTION HEADER -->
+        <!-- SECTION CONTENT -->
+        <div id="content">
+            <!-- #cutShadow_document - marcação extra para aplicação do efeito de drop shadow do papel -->
+            <div id="cutShadow_document">
+                <!-- SECTION INNER CONTENT -->
+                <div id="inner_content" class="grid_16col clearfix">
+                    <!-- SECTION MAIN NAV -->
+                    <div id="mainNav_wrapper">
+                        <!--navegação principal-->
+                        <ul id="mainNav">
+                            <li class="div"></li>
+                            <li><a href="javascript:void(0)" rel="Demandas" id="bt_mainNav_assistSocial" class="bt_mainNav">Demandas</a>
+                            </li>
+                            <li class="div"></li>
+                            <%--<li><a href="javascript:void(0)" rel="Modelos" id="bt_mainNav_analiseClinica" class="bt_mainNav">
+                            Modelos</a></li>
+                        <li class="div"></li>--%>
+                            <li><a href="javascript:void(0)" rel="Configurações" id="bt_mainNav_config" class="bt_mainNav">Configurações</a>
+                            </li>
+                            <li class="div"></li>
+                        </ul>
+                        <!--end navegação principal-->
+                        <!--titles menu-->
+                        <div id="titles_menu" class="clear closed">
+                            <!--conteúdo inserido com jquery-->
+                        </div>
+                        <!--end submenu Expediente-->
+                        <!--submenu Legislação Sanitária e Biblioteca-->
+                        <ul id="submenu_biblioteca" class="submenu clearfix" title="Demandas">
+                            <%--<li><span class="handler" title="arraste para uma nova posição"></span><a href="javascript:void(0)"
+                            rel="nofollow"><span class="icon_more"></span>Usuário</a>
+                            <!-- section child -->
+                            <ul class="child">
+                                <li class="arrow_top"></li>
+                                <li><a href="SiofCoordenador.aspx">Coordenador</a></li>
+                                <li><a href="SiofDiagramador.aspx">Diagramador</a></li>
+                                <li><a href="SiofRevisor.aspx">Revisor</a></li>
+                            </ul>
+                            <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPContasPublicas.aspx"
+                                rel="nofollow">Contas Públicas</a></li>
+                            <!-- end section child -->
+                        </li>--%>
+                            <li><span class="handler" title="arraste para uma nova posição"></span><a href="SiofEditoracao.aspx"
+                                rel="nofollow">Editoração</a></li>
+                            <li><span class="handler" title="arraste para uma nova posição"></span><a href="TEMPSEPRevisor.aspx"
+                                rel="nofollow">Revisor</a></li>
+                        </ul>
+                        <!--end submenu Legislação Sanitária e Biblioteca-->
+                        <!--submenu DAM-->
+                        <%--<ul id="submenu_dam" class="submenu clearfix" title="Modelos">
+                        <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPModeloEdicao.aspx"
+                            rel="nofollow">Modelos de Edição</a></li>
+                        <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPImagemModelo.aspx"
+                            rel="nofollow">Imagem dos Modelos</a></li>
+                    </ul>--%>
+                        <!--end submenu DAM-->
+                        <!--submenu Ajuda-->
+                        <ul id="submenu_ajuda" class="submenu clearfix" title="Configurações">
+                            <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPCliente.aspx"
+                                rel="nofollow">Cliente</a></li>
+                            <li><span class="handler" title="arraste para uma nova posição"></span><a href="javascript:void(0)"
+                                rel="nofollow"><span class="icon_more"></span>Modelo</a>
+                                <ul class="child">
+                                    <li class="arrow_top"></li>
+                                    <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPModeloEdicao.aspx"
+                                        rel="nofollow">Modelos de Edição</a></li>
+                                    <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPImagemModelo.aspx"
+                                        rel="nofollow">Imagem dos Modelos</a></li>
+                                </ul>
+                            </li>
+                            <li><span class="handler" title="arraste para uma nova posição"></span><a href="SEPMaquina.aspx"
+                                rel="nofollow">Máquinas</a></li>
+                        </ul>
+                        <!--end submenu Ajuda-->
+                    </div>
+                    <!-- END SECTION MAIN NAV -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- END SECTION INNER CONTENT -->
+            </div>
+            <!-- END #cutShadow_document -->
+            <%--<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>--%>
+        </div>
+        <!-- END SECTION CONTENT -->
+        <!-- SECTION FOOTER -->
+        <div id="footer">
+            <div id="inner_footer">
+                <p id="copyright">
+                    <span>&copy;</span>Copyright
+                <%=DateTime.Now.Year %>
+                - IMAP - Instituto Municipal de Administração Pública
+                </p>
+                <p id="selo_w3c_xhtml">
+                    <a href="https://validator.w3.org/check?uri=referer">
+                        <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31"
+                            width="88" />
+                    </a>
+                </p>
+                <a href="https://www.portalimap.org.br" rel="external">
+                    <img src="../img/selos/selo_imap_negativo.png" alt="Desenvolvido pelo IMAP - Instituto Municipal de Administração Pública"
+                        id="selo_imap" /></a>
+            </div>
+        </div>
+        <!-- END SECTION FOOTER -->
+    </form>
+</body>
+</html>

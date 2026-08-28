@@ -1,0 +1,31 @@
+# Visual Studio / .NET build artifacts
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+# Publish / deployment output
+[Pp]ublish/
+*.pubxml
+*.pubxml.user
+
+# ReSharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store

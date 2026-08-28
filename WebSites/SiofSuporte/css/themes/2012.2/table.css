@@ -1,0 +1,244 @@
+﻿/*------------------------------------------------------------------------------------
+	STYLESHEET TABELA
+
+	autor: Thiago Teles Pereira - Web Designer
+	contato: thiago.teles@portalimap.org.br
+	empresa: IMAP - Instituto Municipal de AdministraÃ§Ã£o PÃºblica
+	criado em: 16/11/2012
+	versÃ£o: 1.0
+
+	SOBRE VALIDAÃ‡ÃƒO: ESTA FOLHA DE ESTILO UTILIZA PREFIXOS
+	PORPRIETÃRIOS (-MOZ, -WEBKIT, -O), ESTES PREFIXOS SÃƒO NECESSÃRIOS
+	PARA QUE DETERMINADA PROPRIEDADE CSS FUNCIONE NO NAVEGADOR
+	EM QUESTÃƒO. COMO O CSS3 AINDA NÃƒO Ã‰ UM PADRÃƒO OFICIAL SE FAZ
+	NECESSÃRIO O USO DESTES PREFIXOS. POR ESTE MOTIVO APENAS, ESTA
+	FOLHA DE ESTILO NÃƒO PASSA NO VALIDADOR W3C.
+
+	NÃƒO REALIZE ALTERAÃ‡Ã•ES NO CSS SEM ANTES
+	ENTRAR EM CONTATO COM O WEB DESIGNER.
+-----------------------------------------------------------------------------------*/
+table.stylized{
+	width: 100%;
+	border-spacing:1px;
+	/*border-collapse:collapse;*/
+	margin:30px 0;
+	caption-side:top;
+	color: #333;
+	font-size: 75%;
+	background-color:#BCBCBC;
+}
+table.stylized caption{
+	padding-bottom:4px;
+	/*margin-top:10px;*/
+	font-size: 16px;
+	font-weight:700;
+	text-align:left;
+}
+table.stylized th[scope="col"]{
+	min-height: 30px;
+	text-align: center !important;
+}
+table.stylized th, table.stylized td{
+	padding:4px;
+	border:1px solid #FFF;
+	text-align: left;
+	vertical-align: middle;
+}
+table.stylized th, table.stylized tfoot td{
+	font-size: 114%;
+	font-family: AkzidenzGroteskBQLight, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: inherit;
+	box-shadow: 0 1px 2px #909090;
+}
+table.stylized tr{
+	background-color: #F2F2F2;
+}
+table.stylized tbody tr.even{
+	background-color: #DDE5EA;
+}
+table.verticalHeaders tbody td.even{
+	background-color: #DDE5EA;
+}
+table.stylized tbody tr.odd{
+	background-color: #FFF;
+}
+table.verticalHeaders tbody td.odd{
+	background-color: #FFF;
+}
+table.stylized tbody tr:hover td{
+	background-color: #f7df49;
+}
+table.stylized tfoot td{
+	color: inherit;
+	font-weight:700;
+	text-align: center;
+}/*
+table.stylized tfoot td{
+	text-align: center;
+}*/
+
+/*ÍCONES USADOS PARA BOTÕEES DE AÇÕES (BUTTONS) - tb = table button*/
+table.stylized tbody td.actions{
+	text-align: center;
+}
+.tb_icon_generic, .tb_icon_doc, .tb_icon_newDoc, .tb_icon_editDoc, .tb_icon_cancelDoc, .tb_icon_viewDoc, .tb_icon_search, .tb_icon_zoomIn, .tb_icon_zoomOut, .tb_icon_save,
+.tb_icon_print, .tb_icon_delete, .tb_icon_filter, .tb_icon_downloadFile, .tb_icon_uploadFile, .tb_icon_cancel , .tb_icon_pdf, .tb_icon_recourse, .tb_icon_releasePaper,
+.tb_icon_dam, .tb_icon_notification, .tb_icon_health, .tb_icon_cash ,.tb_icon_irregular, .tb_icon_pending, .tb_icon_regular, .tb_icon_sendMail, .tb_icon_calendar{
+	height: 18px !important;
+	padding-right: 4px;
+	border-right: 1px solid #999;
+	margin-left: 0;
+	/*padding: 0 0 2px 0;*/
+	border-bottom: 2px solid transparent;
+	/*margin: 0 2px;*/
+	text-indent: -10000em;
+	background-color: transparent !important;
+	background-image: url('img/icons/sprite_tb_icons.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-transition: all 300ms cubic-bezier(0.15,1,1,1);
+	-moz-transition   : all 300ms cubic-bezier(0.15,1,1,1);
+	-ms-transition    : all 300ms cubic-bezier(0.15,1,1,1);
+	-o-transition     : all 300ms cubic-bezier(0.15,1,1,1);
+	transition        : all 300ms cubic-bezier(0.15,1,1,1);
+	display: inline-block;
+	*display:block;
+	*float:left;
+	cursor: pointer;
+}
+.tb_icon_generic:last-child, .tb_icon_doc:last-child, .tb_icon_newDoc:last-child, .tb_icon_editDoc:last-child, .tb_icon_cancelDoc:last-child,
+.tb_icon_viewDoc:last-child, .tb_icon_search:last-child, .tb_icon_zoomIn:last-child, .tb_icon_zoomOut:last-child, .tb_icon_save:last-child,
+.tb_icon_print:last-child, .tb_icon_delete:last-child, .tb_icon_filter:last-child, .tb_icon_downloadFile:last-child, .tb_icon_uploadFile:last-child,
+.tb_icon_cancel:last-child , .tb_icon_pdf:last-child, .tb_icon_recourse:last-child, .tb_icon_releasePaper:last-child, .tb_icon_dam:last-child,
+.tb_icon_notification:last-child, .tb_icon_health:last-child, .tb_icon_cash:last-child,
+.tb_icon_sendMail:last-child, .tb_icon_calendar:last-child{
+	border-right: none;
+}
+.tb_icon_irregular, .tb_icon_pending, .tb_icon_regular{
+	border: none;
+}
+.tb_icon_generic{
+	width: auto;
+	font-weight: 700;
+	text-indent: 0;
+	text-decoration: none;
+	background-image: none;
+}
+.tb_icon_doc{
+	width: 15px;
+	background-position: -10px 0;
+}
+.tb_icon_newDoc{
+	width: 18px;
+	background-position: -35px 0;
+}
+.tb_icon_editDoc{
+	width: 18px;
+	background-position: -64px 0;
+}
+.tb_icon_cancelDoc{
+	width: 18px;
+	background-position: -92px 0;
+}
+.tb_icon_viewDoc{
+	width: 17px;
+	background-position: -121px 0;
+}
+.tb_icon_search{
+	width: 18px;
+	background-position: -148px 0;
+}
+.tb_icon_zoomIn{
+	width: 18px;
+	background-position: -176px 0;
+}
+.tb_icon_zoomOut{
+	width: 18px;
+	background-position: -204px 0;
+}
+.tb_icon_save{
+	width: 18px;
+	background-position: -232px 0;
+}
+.tb_icon_print{
+	width: 23px;
+	background-position: -260px 0;
+}
+.tb_icon_delete{
+	width: 16px;
+	background-position: -293px 0;
+}
+.tb_icon_filter{
+	width: 14px;
+	background-position: -319px 0;
+}
+.tb_icon_downloadFile{
+	width: 17px;
+	background-position: -343px 0;
+}
+.tb_icon_uploadFile{
+	width: 17px;
+	background-position: -370px 0;
+}
+.tb_icon_cancel{
+	width: 18px;
+	background-position: -397px 0;
+}
+.tb_icon_pdf{
+	width: 18px;
+	background-position: -425px 0;
+}
+.tb_icon_recourse{
+	width: 17px;
+	background-position: -453px 0;
+}
+.tb_icon_releasePaper{
+	width: 18px;
+	background-position: -480px 0;
+}
+.tb_icon_dam{
+	width: 18px;
+	background-position: -508px 0;
+}
+.tb_icon_notification{
+	width: 14px;
+	background-position: -536px 0;
+}
+.tb_icon_health{
+	width: 21px;
+	background-position: -560px 0;
+}
+.tb_icon_cash{
+	width: 9px;
+	background-position: -591px 0;
+}
+.tb_icon_sendMail{
+	width: 23px;
+	background-position: -610px 0;
+}
+.tb_icon_calendar{
+	width: 18px;
+	background-position: -727px 0;
+}
+.tb_icon_irregular{
+	width: 18px;
+	background-position: -643px 0;
+}
+.tb_icon_pending{
+	width: 18px;
+	background-position: -671px 0;
+}
+.tb_icon_regular{
+	width: 18px;
+	background-position: -699px 0;
+}
+
+
+.tb_icon_generic:active,.tb_icon_doc:active, .tb_icon_newDoc:active, .tb_icon_editDoc:active, .tb_icon_cancelDoc:active, .tb_icon_viewDoc:active, .tb_icon_search:active, .tb_icon_zoomIn:active,
+.tb_icon_zoomOut:active, .tb_icon_save:active, .tb_icon_print:active, .tb_icon_delete:active, .tb_icon_filter:active, .tb_icon_downloadFile:active, .tb_icon_uploadFile:active, .tb_icon_cancel:active,
+.tb_icon_pdf:active, .tb_icon_recourse:active, .tb_icon_releasePaper:active, .tb_icon_dam:active, .tb_icon_notification:active, .tb_icon_health:active, .tb_icon_cash:active ,.tb_icon_sendMail:active,
+.tb_icon_calendar{
+	color: #333 !important;
+	border-bottom-color: transparent;
+}

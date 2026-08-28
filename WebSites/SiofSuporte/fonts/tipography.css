@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------------------------
+	STYLESHEET WEBFONTS AKZIDENZ GROTESK
+
+	autor: Thiago Teles Pereira - Web Designer
+	contato: thiago.teles@portalimap.org.br
+	empresa: IMAP - Instituto Municipal de Administração Pública
+	criado em: 16/11/2012
+	versão: 1.0
+
+	TIPOGRAFIAS:
+		Akzidens Grotesk Light
+		Akzidens Grotesk BQ Bold
+
+	NÃO REALIZE ALTERAÇÕES NO CSS SEM ANTES
+	ENTRAR EM CONTATO COM O WEB DESIGNER.
+-----------------------------------------------------------------------------------*/
+
+/*Akzidens Grotesk Light*/
+@font-face{
+	font-family: 'AkzidenzGroteskLight';
+	src: url('akzidenzgrotesk-light/akzidenzgrotesk-light-webfont.eot');
+	src: url('akzidenzgrotesk-light/akzidenzgrotesk-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('akzidenzgrotesk-light/akzidenzgrotesk-light-webfont.woff') format('woff'),
+		 url('akzidenzgrotesk-light/akzidenzgrotesk-light-webfont.ttf') format('truetype'),
+		 url('akzidenzgrotesk-light/akzidenzgrotesk-light-webfont.svg#AkzidenzGroteskLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Akzidens Grotesk BQ Bold*/
+@font-face{
+	font-family: 'AkzidenzGroteskBQBold';
+	src: url('akzidenzgrotesk-bold/akzidenzgrotesk-bold-webfont.eot');
+	src: url('akzidenzgrotesk-bold/akzidenzgrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('akzidenzgrotesk-bold/akzidenzgrotesk-bold-webfont.woff') format('woff'),
+		 url('akzidenzgrotesk-bold/akzidenzgrotesk-bold-webfont.ttf') format('truetype'),
+		 url('akzidenzgrotesk-bold/akzidenzgrotesk-bold-webfont.svg#AkzidenzGroteskBQBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

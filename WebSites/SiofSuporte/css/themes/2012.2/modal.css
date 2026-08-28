@@ -1,0 +1,71 @@
+﻿/*////////////////////
+	LIGHTBOX
+///////////////////*/
+.lightbox{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:transparent url('img/bgTile_diagonal_alpha_40x40.png') repeat left top;	
+	z-index:1000;
+}
+.clearlooks2_modalBlocker{
+	background:transparent url('img/bgTile_diagonal_alpha_40x40.png') repeat left top !important;
+	opacity: 1 !important;
+	filter:alpha(opacity=100%) !important;
+}
+	
+	/*Editar DescriÃ§Ã£o DiÃ¡rio*/
+.screen_editDescSite
+{
+	
+	width:600px;
+}
+/*/////////////////////////
+	WINDOW FLOAT
+////////////////////////*/
+.windowFloat{
+	position:relative;	
+	top:80px;/*      Alteração feita por Thiago Almeida para resolver o problema
+	left: 50%;       de 3 formulario com 3 colunas. Teles vai reajustar depois
+	width: 500px;*/
+	left: 30%;
+	width: 80%;
+	height: auto;
+	max-height: 500px;
+	padding: 8px;	
+	border:4px solid rgba(58,37,21,.75);
+	border-radius: 6px;
+	margin: 0 0 0 -250px;
+	background-color: #F2F2F2;
+	box-shadow: 0 0 10px rgba(0,0,0,.75);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.close_window{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 24px;
+	/*margin: 2px 8px 0 0 !important;*/
+	margin: 30px 20px 0 0 !important;
+	text-indent: -10000em;	
+	text-decoration: none !important;
+	background: transparent url('img/close_window.png') no-repeat left top;
+	transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+}
+.close_window:hover{
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+}

@@ -1,0 +1,22 @@
+/* tables */
+table.tablesorter {
+	margin:10px 0pt 15px;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url('double_arrow.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url('asc_arrow.png');
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url('desc_arrow.png');
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+/*background-color: #B8BD3E;*/
+}

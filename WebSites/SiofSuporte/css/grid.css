@@ -1,0 +1,141 @@
+/*------------------------------------------------------------------------------------
+	STYLESHEET GRID LAYOUT 960px
+
+	autor: Thiago Teles Pereira - Web Designer
+	contato: thiago.teles@portalimap.org.br
+	empresa: IMAP - Instituto Municipal de Administração Pública
+	criado em: 28/01/2013
+	versão: 1.0
+
+	TIPO DE LAYOUT: FIXO;
+
+	SOBRE VALIDAÇÃO: ESTA FOLHA DE ESTILO UTILIZA PREFIXOS
+	PORPRIETÁRIOS (-MOZ, -WEBKIT, -O), ESTES PREFIXOS SÃO NECESSÁRIOS
+	PARA QUE DETERMINADA PROPRIEDADE CSS FUNCIONE NO NAVEGADOR
+	EM QUESTÃO. COMO O CSS3 AINDA NÃO É UM PADRÃO OFICIAL SE FAZ
+	NECESSÁRIO O USO DESTES PREFIXOS. POR ESTE MOTIVO APENAS, ESTA
+	FOLHA DE ESTILO NÃO PASSA NO VALIDADOR W3C.
+
+	NÃO REALIZE ALTERAÇÕES NO CSS SEM ANTES
+	ENTRAR EM CONTATO COM O WEB DESIGNER.
+-----------------------------------------------------------------------------------*/
+/*CONTAINER*/
+.grid_12col, .grid_16col{
+	position: relative;
+	left: 50%;
+	width: 960px;
+	margin-left: -480px;
+}
+
+/*GRID*/
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13,.grid_14, .grid_15, .grid_16{
+	margin: 0 10px;
+}
+
+/*MARGIN CLEAR*/
+.first-child{
+	margin-left: 0 !important;
+}
+.last-child{
+	margin-right: 0 !important;
+}
+
+/*12 COLUMNS GRID*/
+.grid_12col .grid_1{
+	width: 60px;
+}
+.grid_12col .grid_2{
+	width: 140px;
+}
+.grid_12col .grid_3{
+	width: 220px;
+}
+.grid_12col .grid_4{
+	width: 300px;
+}
+.grid_12col .grid_5{
+	width: 380px;
+}
+.grid_12col .grid_6{
+	width: 460px;
+}
+.grid_12col .grid_7{
+	width: 540px;
+}
+.grid_12col .grid_8{
+	width: 620px;
+}
+.grid_12col .grid_9{
+	width: 700px;
+}
+.grid_12col .grid_10{
+	width: 780px;
+}
+.grid_12col .grid_11{
+	width: 860px;
+}
+.grid_12col .grid_12{
+	width: 940px;
+}
+
+/*16 COLUMNS GRID*/
+.grid_16col .grid_1{
+	width: 40px;
+}
+.grid_16col .grid_2{
+	width: 100px;
+}
+.grid_16col .grid_3{
+	width: 160px;
+}
+.grid_16col .grid_4{
+	width: 220px;
+}
+.grid_16col .grid_5{
+	width: 280px;
+}
+.grid_16col .grid_6{
+	width: 340px;
+}
+.grid_16col .grid_7{
+	width: 400px;
+}
+.grid_16col .grid_8{
+	width: 460px;
+}
+.grid_16col .grid_9{
+	width: 520px;
+}
+.grid_16col .grid_10{
+	width: 580px;
+}
+.grid_16col .grid_11{
+	width: 640px;
+}
+.grid_16col .grid_12{
+	width: 700px;
+}
+.grid_16col .grid_13{
+	width: 760px;
+}
+.grid_16col .grid_14{
+	width: 820px;
+}
+.grid_16col .grid_15{
+	width: 880px;
+}
+.grid_16col .grid_16{
+	width: 940px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

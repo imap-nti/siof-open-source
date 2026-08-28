@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------------------
+	STYLESHEET - ANIMAÇÃO OFFSET HORIZONTAL
+	
+	autor: Thiago Teles Pereira - Web designer
+	empresa: IMAP - Instituto Municipal de Administração Pública
+	criado em: 19/06/2012
+	versão: 1.0
+-------------------------------------------------------------------------------------*/
+
+@keyframes verticalOffset_anim{
+	0% {left:-10px;}
+	25% {left:20px;}
+	50% {left:-20px;}
+	75% {left:20px;}
+	100% {left:0;}
+}
+/*Firefox 4+*/
+@-moz-keyframes verticalOffset_anim{
+	0% {left:-10px;}
+	25% {left:20px;}
+	50% {left:-20px;}
+	75% {left:20px;}
+	100% {left:0;}
+}
+/*Chrome e Safari*/
+@-webkit-keyframes verticalOffset_anim{
+	0% {left:-10px;}
+	25% {left:20px;}
+	50% {left:-20px;}
+	75% {left:20px;}
+	100% {left:0;}
+}

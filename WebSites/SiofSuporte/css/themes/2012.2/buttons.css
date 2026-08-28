@@ -1,0 +1,331 @@
+/*------------------------------------------------------------------------------------
+	STYLESHEET BUTTONS
+
+	autor: Thiago Teles Pereira - Web Designer
+	contato: thiago.teles@portalimap.org.br
+	empresa: IMAP - Instituto Municipal de Administração Pública
+	criado em: 03/01/2012
+	versão: 1.0
+
+	SOBRE VALIDAÇÃO: ESTA FOLHA DE ESTILO UTILIZA PREFIXOS
+	PORPRIETÁRIOS (-MOZ, -WEBKIT, -O), ESTES PREFIXOS SÃO NECESSÁRIOS
+	PARA QUE DETERMINADA PROPRIEDADE CSS FUNCIONE NO NAVEGADOR
+	EM QUESTÃO. COMO O CSS3 AINDA NÃO É UM PADRÃO OFICIAL SE FAZ
+	NECESSÁRIO O USO DESTES PREFIXOS. POR ESTE MOTIVO APENAS, ESTA
+	FOLHA DE ESTILO NÃO PASSA NO VALIDADOR W3C.
+
+	NÃO REALIZE ALTERAÇÕES NO CSS SEM ANTES
+	ENTRAR EM CONTATO COM O WEB DESIGNER.
+-----------------------------------------------------------------------------------*/
+/*-------------------------------------------
+	ESTILO icon PARA LINK BUTTON
+--------------------------------------------*/
+.button_style{
+	height: 23px;
+	min-width: 25px;
+	padding: 6px;
+	border: 1px solid #333;
+	/*border-radius: 6px;*/
+	margin: 4px 7px;
+	color: #333;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 25px;
+	background-color: #FBFBFB;
+	box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 1px 2px rgba(0,0,0,.2);/*IE9+,Firefox4+,Chrome10+,Safari,Opera10.5+*/
+	-webkit-transition: all 300ms ease-in;
+	-moz-transition: all 300ms ease-in;
+	-ms-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+	transition: all 300ms ease-in;
+	box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 1px 2px rgba(0,0,0,.2);/*IE9+,Firefox4+,Chrome10+,Safari,Opera10.5+*/
+	cursor: pointer;
+	display: inline-block;
+}
+.button_style:hover{
+	color: #1B554B !important;
+	border: 1px solid #1B554B;
+}
+.button_style:active, .button_style:visited{
+	border-color: #333 !important;
+	color: #333 !important;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.icon_save, .icon_cancel, .icon_send, .icon_clean, .icon_search, .icon_back, .icon_print, .icon_pdf, .icon_publish,
+.icon_uploadImage, .icon_cut, .icon_rotate, .icon_viewDoc, .icon_delete, .icon_newBlank, .icon_uploadFile, .icon_downloadFile,
+.icon_filter, .icon_doc, .icon_newDoc, .icon_editDoc, .icon_cancelDoc, .icon_delDoc, .icon_zoomIn, .icon_zoomOut, .icon_user,
+.icon_sendMail, .icon_mail, .icon_edit, .icon_marking, .icon_list, .icon_calendar{
+	text-indent: 28px;
+	background-repeat: no-repeat;
+	background-position: 4px 5px;
+	-webkit-transition: all 300ms cubic-bezier(0.15,1,1,1);
+	-moz-transition: all 300ms cubic-bezier(0.15,1,1,1);
+	-ms-transition: all 300ms cubic-bezier(0.15,1,1,1);
+	-o-transition: all 300ms cubic-bezier(0.15,1,1,1);
+	transition: all 300ms cubic-bezier(0.15,1,1,1);
+
+}
+.icon_save{
+	background-image: url('img/icons/icon_save_25px.png');
+}
+.icon_cancel{
+	background-image: url('img/icons/icon_cancel_25px.png');
+}
+.icon_send{
+	background-image: url('img/icons/icon_send_25px.png');
+}
+.icon_clean{
+	background-image: url('img/icons/icon_clean_25px.png');
+}
+.icon_search{
+	background-image: url('img/icons/icon_search_25px.png');
+}
+.icon_back{
+	background-image: url('img/icons/icon_back_25px.png');
+}
+.icon_print{
+	background-image: url('img/icons/icon_print_25px.png');
+}
+.icon_pdf{
+	background-image: url('img/icons/icon_pdf_25px.png');
+}
+.icon_publish{
+	background-image: url('img/icons/icon_publish_25px.png');
+}
+.icon_uploadImage{
+	background-image: url('img/icons/icon_uploadImage_25px.png');
+}
+.icon_cut{
+	background-image: url('img/icons/icon_cut_25px.png');
+}
+.icon_rotate{
+	background-image: url('img/icons/icon_rotate_25px.png');
+}
+.icon_viewDoc{
+	background-image: url('img/icons/icon_viewDoc_25px.png');
+}
+.icon_delete{
+	background-image: url('img/icons/icon_delete_25px.png');
+}
+.icon_newBlank{
+	background-image: url('img/icons/icon_newBlank_25px.png');
+}
+.icon_uploadFile{
+	background-image: url('img/icons/icon_uploadFile_25px.png');
+}
+.icon_downloadFile{
+	background-image: url('img/icons/icon_downloadFile_25px.png');
+}
+.icon_filter{
+	background-image: url('img/icons/icon_filter_25px.png');
+}
+.icon_doc{
+	background-image: url('img/icons/icon_doc_25px.png');
+}
+.icon_newDoc{
+	background-image: url('img/icons/icon_newDoc_25px.png');
+}
+.icon_editDoc{
+	background-image: url('img/icons/icon_editDoc_25px.png');
+}
+.icon_cancelDoc{
+	background-image: url('img/icons/icon_cancelDoc_25px.png');
+}
+.icon_delDoc{
+	background-image: url('img/icons/icon_delDoc_25px.png');
+}
+.icon_zoomIn{
+	background-image: url('img/icons/icon_zoomIn_25px.png');
+}
+.icon_zoomOut{
+	background-image: url('img/icons/icon_zoomOut_25px.png');
+}
+.icon_user{
+	background-image: url('img/icons/icon_user_25px.png');
+}
+.icon_mail{
+	background-image: url('img/icons/icon_mail_25px.png');
+}
+.icon_edit{
+	background-image: url('img/icons/icon_edit_25px.png');
+}
+.icon_marking{
+	background-image: url('img/icons/icon_marking_25px.png');
+}
+.icon_list{
+	background-image: url('img/icons/icon_list_25px.png');
+}
+.icon_calendar{
+	background-image: url('img/icons/icon_calendar_25px.png');
+}
+.icon_save:hover, .icon_cancel:hover, .icon_send:hover, .icon_clean:hover, .icon_search:hover, .icon_back:hover, .icon_print:hover, .icon_pdf:hover,
+.icon_publish:hover, .icon_uploadImage:hover, .icon_cut:hover, .icon_rotate:hover, .icon_viewDoc:hover, .icon_delete:hover, .icon_newBlank:hover,
+.icon_uploadFile:hover, .icon_downloadFile:hover, .icon_filter:hover, .icon_doc:hover, .icon_newDoc:hover, .icon_editDoc:hover, .icon_cancelDoc:hover,
+.icon_delDoc:hover, .icon_zoomIn:hover, .icon_zoomOut:hover, .icon_user:hover, .icon_mail:hover, .icon_edit:hover, .icon_marking:hover, .icon_list:hover,
+.icon_calendar:hover{
+	background-position: 4px -53px;
+}
+.icon_save:active, .icon_cancel:active, .icon_send:active, .icon_clean:active, .icon_search:active, .icon_back:active, .icon_print:active, .icon_pdf:active,
+.icon_publish:active, .icon_uploadImage:active, .icon_cut:active, .icon_rotate:active, .icon_viewDoc:active, .icon_delete:active, .icon_newBlank:active,
+.icon_uploadFile:active, .icon_downloadFile:active, .icon_filter:active, .icon_doc:active, .icon_newDoc:active, .icon_editDoc:active, .icon_cancelDoc:active,
+.icon_delDoc:active, .icon_zoomIn:active, .icon_zoomOut:active, .icon_user:active, .icon_mail:active, .icon_edit:active, .icon_marking:active, .icon_list:active,
+.icon_calendar:active{
+	background-position: 4px 5px;
+}
+
+.icon_save.disabled, .icon_cancel.disabled, .icon_send.disabled, .icon_clean.disabled, .icon_search.disabled, .icon_back.disabled, .icon_print.disabled, .icon_pdf.disabled,
+.icon_publish.disabled, .icon_uploadImage.disabled, .icon_cut.disabled, .icon_rotate.disabled, .icon_viewDoc.disabled, .icon_delete.disabled, .icon_newBlank.disabled,
+.icon_uploadFile.disabled, .icon_downloadFile.disabled, .icon_filter.disabled, .icon_doc.disabled, .icon_newDoc.disabled, .icon_editDoc.disabled, .icon_cancelDoc.disabled,
+.icon_delDoc.disabled, .icon_zoomIn.disabled, .icon_zoomOut.disabled, .icon_user.disabled, .icon_mail.disabled, .icon_edit.disabled,
+.icon_marking.disabled, .icon_list.disabled, .icon_calendar.disabled,
+.icon_save.disabled:hover, .icon_cancel.disabled:hover,.icon_send.disabled:hover, .icon_clean.disabled:hover, .icon_search.disabled:hover, .icon_back.disabled:hover,
+.icon_print.disabled:hover, .icon_pdf.disabled:hover, .icon_publish.disabled:hover, .icon_uploadImage.disabled:hover, .icon_cut.disabled:hover, .icon_rotate.disabled:hover,
+.icon_viewDoc.disabled:hover, .icon_delete.disabled:hover, .icon_newBlank.disabled:hover, .icon_uploadFile.disabled:hover, .icon_downloadFile.disabled:hover,
+.icon_filter.disabled:hover, .icon_doc.disabled:hover, .icon_newDoc.disabled:hover, .icon_editDoc.disabled:hover, .icon_cancelDoc.disabled:hover, .icon_delDoc.disabled:hover,
+.icon_zoomIn.disabled:hover, .icon_zoomOut.disabled:hover, .icon_user.disabled:hover, .icon_mail.disabled:hover, .icon_edit.disabled:hover,
+.icon_marking.disabled:hover, .icon_list.disabled:hover, .icon_calendar.disabled:hover,
+.icon_save.disabled:active, .icon_cancel.disabled:active, .icon_send.disabled:active, .icon_clean.disabled:active, .icon_search.disabled:active, .icon_back.disabled:active,
+.icon_print.disabled:active, .icon_pdf.disabled:active, .icon_publish.disabled:active, .icon_uploadImage.disabled:active, .icon_cut.disabled:active,
+.icon_rotate.disabled:active, .icon_viewDoc.disabled:active, .icon_delete.disabled:active, .icon_newBlank.disabled:active, .icon_uploadFile.disabled:active,
+.icon_downloadFile.disabled:active, .icon_filter.disabled:active, .icon_doc.disabled:active, .icon_newDoc.disabled:active, .icon_editDoc.disabled:active,
+.icon_cancelDoc.disabled:active, .icon_delDoc.disabled:active, .icon_zoomIn.disabled:active, .icon_zoomOut.disabled:active, .icon_user.disabled:active,
+.icon_mail.disabled:active, .icon_edit.disabled:active, .icon_marking.disabled:active, .icon_list.disabled:active, .icon_calendar.disabled:active{
+	border-color: #666;
+	color: #666;
+	background-color: #F5F5F5;
+	background-position: 4px -112px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	box-shadow: none; /*IE9+,Firefox4+,Chrome10+,Safari,Opera10.5+*/
+	-webkit-animation: none !important;
+	-moz-animation: none !important;
+	-ms-animation: none !important;
+	-o-animation: none !important;
+	animation: none !important;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+	cursor: default;
+}
+
+/*BOTÕES DESABILITADOS PARA SUBMIT, RESET, INPUT BUTTON E BUTTON*/
+.icon_save[disabled], .icon_cancel[disabled], .icon_send[disabled], .icon_clean[disabled], .icon_search[disabled],
+.icon_back[disabled], .icon_print[disabled], .icon_pdf[disabled], .icon_publish[disabled], .icon_uploadImage[disabled],
+.icon_cut[disabled], .icon_rotate[disabled], .icon_viewDoc[disabled], .icon_delete[disabled], .icon_newBlank[disabled],
+.icon_uploadFile[disabled], .icon_downloadFile[disabled], .icon_filter[disabled], .icon_doc[disabled], .icon_newDoc[disabled],
+.icon_editDoc[disabled], .icon_cancelDoc[disabled], .icon_delDoc[disabled], .icon_zoomIn[disabled], .icon_zoomOut[disabled],
+.icon_user[disabled], .icon_mail[disabled], .icon_edit[disabled], .icon_marking[disabled], .icon_list[disabled], .icon_calendar[disabled]{
+	background-position: 4px -112px;
+}
+
+/*-------------------------------------------
+	GLOSS BUTTON
+	usado em combinação com os forms buttons
+	e link buttons.
+--------------------------------------------*/
+.gb_darkGreen, .gb_darkGreen:visited{
+	border-color: #1B554B !important;
+	border-radius: 0 !important;
+	color: #FFF !important;
+	text-shadow: 0 0 2px rgba(0,0,0,.75);
+	background: #1B554B; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1B554B 0%, #32B24A 41%, #1B554B 42%, #127A3D 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1B554B), color-stop(41%,#32B24A), color-stop(42%,#1B554B), color-stop(100%,#127A3D)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1B554B 0%,#32B24A 41%,#1B554B 42%,#127A3D 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1B554B 0%,#32B24A 41%,#1B554B 42%,#127A3D 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1B554B 0%,#32B24A 41%,#1B554B 42%,#127A3D 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1B554B 0%,#32B24A 41%,#1B554B 42%,#127A3D 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1B554B', endColorstr='#32B24A',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 0 1px #D5A7E8 inset, 0 1px 2px rgba(0, 0, 0, 0.5); /*IE9+,Firefox4+,Chrome10+,Safari,Opera10.5+*/
+}
+.gb_darkGreen:hover, .gb_gray:hover{
+	color: #FFF !important;
+	background: #2B6A5F; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2B6A5F 0%, #4CCD65 41%, #2B6A5F 42%, #269354 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2B6A5F), color-stop(41%,#4CCD65), color-stop(42%,#2B6A5F), color-stop(100%,#269354)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2B6A5F 0%,#4CCD65 41%,#2B6A5F 42%,#269354 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2B6A5F 0%,#4CCD65 41%,#2B6A5F 42%,#269354 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2B6A5F 0%,#4CCD65 41%,#2B6A5F 42%,#269354 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2B6A5F 0%,#4CCD65 41%,#2B6A5F 42%,#269354 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2B6A5F', endColorstr='#4CCD65',GradientType=0 ); /* IE6-9 */
+}
+.gb_darkGreen:active{
+	color: #FFF !important;
+}
+
+.gb_gray, .gb_gray:visited{
+	border-color: #575757;
+	border-radius: 0 !important;
+	color: #FFF !important;
+	text-shadow: 0 0 2px rgba(0,0,0,.75);
+	background: rgb(126,126,126); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(83,83,83,1) 0%, rgba(126,126,126,1) 41%, rgba(83,83,83,1) 42%, rgba(126,126,126,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(83,83,83,1)), color-stop(41%,rgba(126,126,126,1)), color-stop(42%,rgba(83,83,83,1)), color-stop(100%,rgba(126,126,126,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(83,83,83,1) 0%,rgba(126,126,126,1) 41%,rgba(83,83,83,1) 42%,rgba(126,126,126,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(83,83,83,1) 0%,rgba(126,126,126,1) 41%,rgba(83,83,83,1) 42%,rgba(126,126,126,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(83,83,83,1) 0%,rgba(126,126,126,1) 41%,rgba(83,83,83,1) 42%,rgba(126,126,126,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(83,83,83,1) 0%,rgba(126,126,126,1) 41%,rgba(83,83,83,1) 42%,rgba(126,126,126,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#451659', endColorstr='#734b84',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 0 1px #D5A7E8 inset, 0 1px 2px rgba(0, 0, 0, 0.5); /*IE9+,Firefox4+,Chrome10+,Safari,Opera10.5+*/
+}
+.gb_gray:active{
+	color: #FFF !important;
+}
+
+/*-------------------------------------------
+	ROUNDED GRADIENT BUTTON
+--------------------------------------------*/
+.bt_grad_rd{
+	position: relative;
+	height: 47px !important;
+	border: 4px solid #FFF !important;
+	border-radius: 60px;
+	color: #333;
+	font-family: AkzidenzGroteskBQBold,Arial, Helvetica, sans-serif;
+	font-size: 18px !important;
+	text-align: center;
+	text-decoration: none;
+	line-height: 42px;
+	background: #EFEFEF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #EFEFEF 0%, #E0E0E0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EFEFEF), color-stop(100%,#E0E0E0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #EFEFEF 0%,#E0E0E0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #EFEFEF 0%,#E0E0E0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #EFEFEF 0%,#E0E0E0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #EFEFEF 0%,#E0E0E0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFEFEF', endColorstr='#E0E0E0',GradientType=0 ); /* IE6-9 */
+	-webkit-transition: none !important;
+	-moz-transition   : none !important;
+	-ms-transition    : none !important;
+	-o-transition     : none !important;
+	transition        : none !important;
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+}
+.bt_grad_rd *{
+	text-decoration: none !important;
+}
+.bt_grad_rd:hover{
+	color: #FFDC00 !important;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+	background: #1B5248; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1EAD5A 0%, #1B5248 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1EAD5A), color-stop(100%,#1B5248)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1EAD5A 0%,#1B5248 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1EAD5A 0%,#1B5248 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1EAD5A 0%,#1B5248 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1EAD5A 0%,#1B5248 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1EAD5A', endColorstr='#1B5248',GradientType=0 ); /* IE6-9 */
+
+}
